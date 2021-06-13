@@ -10,6 +10,6 @@ import br.com.cotiinformatica.entities.Endereco;
 
 public interface IEnderecoRepository extends CrudRepository<Endereco, Integer> {
 
-	@Query("from Endereco e where e.cliente.idCliente = :idCliente")
+	@Query("from Endereco e join e.cliente c where e.cliente.idCliente = :idCliente")
 	List<Endereco> findAllByCliente(@Param("idCliente") Integer idCliente);
 }

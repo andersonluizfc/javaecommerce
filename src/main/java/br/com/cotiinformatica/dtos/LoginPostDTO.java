@@ -1,19 +1,9 @@
 package br.com.cotiinformatica.dtos;
 
-public class ClientePostDTO {
+public class LoginPostDTO {
 
-	private String nome;
 	private String email;
 	private String senha;
-	private String cpf;
-
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
 
 	public String getEmail() {
 		return email;
@@ -31,12 +21,5 @@ public class ClientePostDTO {
 		this.senha = senha;
 	}
 
-	public String getCpf() {
-		return cpf;
-	}
-
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
-	}
-
 }
+
